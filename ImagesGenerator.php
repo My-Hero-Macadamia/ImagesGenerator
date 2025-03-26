@@ -93,16 +93,3 @@ class ImagesGenerator
         return false;
     }
 }
-
-// Create instance and set parameters
-$generator = new ImagesGenerator(
-    savePath: __DIR__ . '/daddy_images/',
-    count: 10,
-    imagePrefix: 'genius.',
-);
-
-// Get a list of generated images
-$list = $generator->generate()->getList();
-
-// Dump the list
-print_r($list);
